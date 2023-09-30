@@ -1,6 +1,5 @@
 'use strict';
 // *** Don't pass an async func or promises to a callback *** //
-/* eslint-disable */
 
 
 // new Promise(async (resolve, reject) => {
@@ -27,9 +26,10 @@
 // });
 
 const f = async () => {
-  await console.log(1)
-  console.log(2)
-}
+  await console.log(1);
+  console.log(2);
+};
 
 f();
 f();
+// 1 1 2 2
